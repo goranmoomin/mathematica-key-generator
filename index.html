@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mathematica 12.0 Key Generator</title>
+        <link rel="stylesheet" href="https://watercss.netlify.com/dist/light.css">
+        <script async src="index.js"></script>
+    </head>
+    <body>
+        <h1>Mathematica 12.0</h1>
+        <ol>
+            <li>Select <b>Other ways to activate</b> → <b>Activate Manually</b>.</li>
+            <li>Input given <b>MathID</b> (xxxx-xxxxx-xxxxx) and any <b>Activation Key</b> below (the default Activation Key will suffice).</li>
+            <li>Press <b>Generate Password</b>.</li>
+            <li>Input your <b>Activation Key</b> and any generated <b>Password</b> to activate your copy of Mathematica.</li>
+        </ol>
+        <form id="form">
+            <fieldset>
+                <legend>Generator</legend>
+                <label for="mathid">MathID: </label>
+                <input type="text" id="mathid" required pattern="\d{4}-\d{5}-\d{5}">
+                <label for="activation-key">Activation Key: </label>
+                <input type="text" id="activation-key" required pattern="\d{4}-\d{4}-\d{6}" value="1234-4321-123456">
+                <button id="button">Generate Password</button>
+            </fieldset>
+        </form>
+        <div id="output"></div>
+    </body>
+</html>
